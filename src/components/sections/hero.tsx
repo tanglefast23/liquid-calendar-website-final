@@ -55,15 +55,8 @@ export function HeroSection() {
               className="flex items-center gap-4 mt-10"
             >
               <a
-                href="#views"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-teal-500 text-zinc-950 text-sm font-semibold hover:bg-teal-400 transition-colors active:scale-[0.98]"
-              >
-                Explore the Views
-                <ArrowDown weight="bold" className="w-4 h-4" />
-              </a>
-              <a
                 href="#download"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-zinc-700 text-sm font-semibold text-zinc-300 hover:border-zinc-500 hover:text-zinc-100 transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-black border border-zinc-800 text-sm font-semibold text-white hover:bg-zinc-900 transition-all"
               >
                 <AppleLogo weight="fill" className="w-5 h-5 mb-0.5" />
                 <div className="flex flex-col items-start leading-none pr-2">
@@ -72,6 +65,13 @@ export function HeroSection() {
                 </div>
                 <div className="w-[1px] h-6 bg-zinc-700/50" />
                 <Drop weight="fill" className="w-5 h-5 text-teal-400" />
+              </a>
+              <a
+                href="#views"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-teal-500 text-zinc-950 text-sm font-semibold hover:bg-teal-400 transition-colors active:scale-[0.98]"
+              >
+                Explore the Views
+                <ArrowDown weight="bold" className="w-4 h-4" />
               </a>
             </motion.div>
           </motion.div>
