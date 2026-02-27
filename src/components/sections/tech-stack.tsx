@@ -35,7 +35,7 @@ export function TechSection() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-0 border-t border-l border-zinc-800/40">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-0 border-t border-l border-zinc-800/40 bg-black">
           {TECH.map((item, i) => (
             <motion.div
               key={item.name}

@@ -3,8 +3,7 @@ import { ValueStrip } from "@/components/sections/value-strip";
 import { ViewsSection } from "@/components/sections/views-grid";
 import { FeaturesSection } from "@/components/sections/features";
 import { TechSection } from "@/components/sections/tech-stack";
-import { CTASection } from "@/components/sections/cta";
-import { FooterSection } from "@/components/sections/footer";
+
 import { Navigation } from "@/components/sections/navigation";
 import { PageShell } from "@/components/page-shell";
 
@@ -18,8 +17,6 @@ export default function Home() {
         <ViewsSection />
         <FeaturesSection />
         <TechSection />
-        <CTASection />
-        <FooterSection />
       </main>
     </PageShell>
   );

@@ -7,9 +7,7 @@ import type { DockItem } from "@/components/ui/floating-dock";
 import {
   House,
   SquaresFour,
-  Lightning,
   Stack,
-  GithubLogo,
   Sun,
   Moon,
 } from "@phosphor-icons/react";
@@ -20,7 +18,7 @@ function ThemeToggleIcon() {
 
   return (
     <AnimatePresence mode="wait">
-      {theme === "dark" ? (
+      {theme === "light" ? (
         <motion.div
           key="sun"
           initial={{ rotate: -90, opacity: 0 }}
@@ -62,20 +60,11 @@ export function Navigation() {
       href: "#views",
     },
     {
-      title: "Features",
-      icon: <Lightning weight="bold" className="w-full h-full text-zinc-300" />,
-      href: "#features",
-    },
-    {
       title: "Stack",
       icon: <Stack weight="bold" className="w-full h-full text-zinc-300" />,
       href: "#tech",
     },
-    {
-      title: "GitHub",
-      icon: <GithubLogo weight="bold" className="w-full h-full text-zinc-300" />,
-      href: "https://github.com/tanglefast23/liquid_calendar_gemini",
-    },
+
     {
       title: "Toggle Light/Dark",
       icon: <ThemeToggleIcon />,

@@ -91,7 +91,7 @@ body::after {
 
 @layer utilities {
   .bg-liquid-pattern {
-    background-color: #ffffff;
+    background-color: #334155;
     background-image: url("/liquid-waves.svg");
     background-size: 400px 400px;
     background-repeat: repeat;

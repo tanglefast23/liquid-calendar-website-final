@@ -10,12 +10,12 @@ interface MockupThemeContextValue {
 }
 
 const MockupThemeContext = createContext<MockupThemeContextValue>({
-  theme: "dark",
-  toggle: () => {},
+  theme: "light",
+  toggle: () => { },
 });
 
 export function MockupThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<MockupTheme>("dark");
+  const [theme, setTheme] = useState<MockupTheme>("light");
   const toggle = useCallback(() => setTheme((t) => (t === "dark" ? "light" : "dark")), []);
 
   return (

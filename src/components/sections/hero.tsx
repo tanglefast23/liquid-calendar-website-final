@@ -3,8 +3,8 @@
 import React from "react";
 import { motion } from "motion/react";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
-import { MonthlyViewMockup } from "@/components/mockups/monthly-view";
-import { Drop, ArrowDown } from "@phosphor-icons/react";
+import { AnimatedCarousel } from "@/components/ui/animated-carousel";
+import { Drop, ArrowDown, AppleLogo } from "@phosphor-icons/react";
 import { useMockupTheme } from "@/lib/mockup-theme";
 
 export function HeroSection() {
@@ -22,37 +22,29 @@ export function HeroSection() {
       <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-teal-500/5 blur-[120px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-teal-600/3 blur-[100px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 w-full">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 items-center">
+      <div className="max-w-6xl mx-auto px-6 md:px-12 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-12 lg:gap-8 items-center">
           {/* Left — Text content (asymmetric, left-aligned per taste skill) */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.1 }}
-            className="md:pr-8"
+            className="lg:pr-4"
           >
-            {/* Badge */}
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-zinc-800 bg-zinc-900/60 mb-8"
-            >
-              <Drop weight="fill" className="w-3.5 h-3.5 text-teal-400" />
-              <span className="text-[11px] font-semibold tracking-[1.5px] uppercase text-zinc-400">
-                Built for iOS
-              </span>
-            </motion.div>
 
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-[0.95] text-zinc-50 mb-6">
-              Liquid
-              <br />
-              <span className="text-teal-400">Calendar</span>
+
+            <h1 className="text-[5.5rem] sm:text-[7.5rem] md:text-[8.5rem] lg:text-[10rem] font-black tracking-[-0.06em] leading-[0.8] mb-8 select-none">
+              <span className="block text-transparent bg-clip-text bg-gradient-to-b from-zinc-50 via-zinc-200 to-zinc-500 pb-2">
+                Liquid
+              </span>
+              <span className="block text-transparent bg-clip-text bg-gradient-to-br from-teal-200 via-teal-400 to-teal-700 filter drop-shadow-[0_0_30px_rgba(45,212,191,0.4)] pb-4">
+                Calendar.
+              </span>
             </h1>
 
             <TextGenerateEffect
               words="A physics-based calendar where time breathes, hours stretch, and your schedule flows like water under your fingertips."
-              className="max-w-[50ch]"
+              className="max-w-[45ch] text-lg md:text-xl font-medium leading-relaxed"
               duration={0.4}
             />
 
@@ -70,12 +62,16 @@ export function HeroSection() {
                 <ArrowDown weight="bold" className="w-4 h-4" />
               </a>
               <a
-                href="https://github.com/tanglefast23/liquid_calendar_gemini"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#download"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-zinc-700 text-sm font-semibold text-zinc-300 hover:border-zinc-500 hover:text-zinc-100 transition-all"
               >
-                View Source
+                <AppleLogo weight="fill" className="w-5 h-5 mb-0.5" />
+                <div className="flex flex-col items-start leading-none pr-2">
+                  <span className="text-[10px] text-zinc-400">Download on the</span>
+                  <span className="text-sm">App Store</span>
+                </div>
+                <div className="w-[1px] h-6 bg-zinc-700/50" />
+                <Drop weight="fill" className="w-5 h-5 text-teal-400" />
               </a>
             </motion.div>
           </motion.div>
@@ -85,18 +81,25 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 40, rotateY: -8 }}
             animate={{ opacity: 1, y: 0, rotateY: 0 }}
             transition={{ type: "spring", stiffness: 80, damping: 20, delay: 0.4 }}
-            className="flex justify-center md:justify-end perspective-[1200px]"
+            className="flex justify-center md:justify-center perspective-[1200px]"
           >
             <div className="relative">
-              {/* Phone frame */}
-              <div className={`w-[260px] md:w-[300px] aspect-[9/19.5] rounded-[2.5rem] border-[3px] ${phoneBorder} ${phoneFrameBg} p-[6px] shadow-[0_20px_60px_-15px_rgba(13,148,136,0.15)] transition-colors duration-300`}>
-                {/* Notch */}
-                <div className={`absolute top-0 left-1/2 -translate-x-1/2 w-[100px] h-[26px] ${notchBg} rounded-b-2xl z-10 transition-colors duration-300`} />
-                {/* Screen */}
-                <div className="w-full h-full rounded-[2rem] overflow-hidden">
-                  <MonthlyViewMockup />
-                </div>
-              </div>
+              {/* Carousel Mockup */}
+              <AnimatedCarousel
+                className="w-[260px] md:w-[300px]"
+                items={[
+                  "/screenshots/screen_01_monthly_view.png",
+                  "/screenshots/screen_02_monthly_view_wide.png",
+                  "/screenshots/screen_03_monthly_view_zoom.png",
+                  "/screenshots/screen_04_monthly_view_dark_mode.png",
+                  "/screenshots/screen_05_monthly_view_multi_add.png",
+                  "/screenshots/screen_06_weekly_view_one_page.png",
+                  "/screenshots/screen_07_weekly_view_collasped.png",
+                  "/screenshots/screen_08_daily_view_compact.png",
+                  "/screenshots/screen_08_weekly_view_scrub.png",
+                  "/screenshots/screen_09_daily_view_text_size.png",
+                ]}
+              />
 
               {/* Floating accent ring */}
               <motion.div
