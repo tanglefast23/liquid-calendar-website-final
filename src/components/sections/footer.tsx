@@ -49,6 +49,14 @@ export function FooterSection() {
               <a href="#tech" className="text-sm text-zinc-500 hover:text-zinc-300 transition-colors">
                 Stack
               </a>
+              <a
+                href="https://tanglefast23.github.io/liquid-calendar-legal/privacy-policy.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-zinc-500 hover:text-zinc-300 transition-colors"
+              >
+                Privacy Policy
+              </a>
             </div>
             <p className="text-[11px] text-zinc-700 mt-4">
               Built with Expo, React Native, and a lot of spring physics.
