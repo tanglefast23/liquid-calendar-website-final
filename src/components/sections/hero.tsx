@@ -33,12 +33,12 @@ export function HeroSection() {
           >
 
 
-            <h1 className="text-[5.5rem] sm:text-[7.5rem] md:text-[8.5rem] lg:text-[10rem] font-black tracking-[-0.06em] leading-[0.8] mb-8 select-none">
-              <span className="block text-transparent bg-clip-text bg-gradient-to-b from-zinc-50 via-zinc-200 to-zinc-500 pb-2">
+            <h1 className="text-[5rem] sm:text-[6.75rem] md:text-[7.6rem] lg:text-[9rem] font-black tracking-[-0.06em] leading-[0.8] mb-8 select-none">
+              <span className="block text-zinc-50 pb-2">
                 Liquid
               </span>
-              <span className="block text-transparent bg-clip-text bg-gradient-to-br from-teal-200 via-teal-400 to-teal-700 filter drop-shadow-[0_0_30px_rgba(45,212,191,0.4)] pb-4">
-                Calendar.
+              <span className="block text-teal-400 filter drop-shadow-[0_0_30px_rgba(45,212,191,0.4)] pb-4">
+                Calendar
               </span>
             </h1>
 
