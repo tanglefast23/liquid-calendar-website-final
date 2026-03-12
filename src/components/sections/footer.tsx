@@ -18,7 +18,7 @@ export function FooterSection() {
                 Stack
               </a>
               <a
-                href="/privacy-policy.html"
+                href="/privacy-policy"
                 className="text-sm text-zinc-500 hover:text-zinc-300 transition-colors"
               >
                 Privacy Policy
