@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liquid Calendar — Support</title>
+  <style>
+    :root {
+      --bg: #fafaf9;
+      --text: #1c1917;
+      --muted: #78716c;
+      --accent: #f97316;
+      --border: #e7e5e4;
+      --card-bg: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1c1917;
+        --text: #fafaf9;
+        --muted: #a8a29e;
+        --accent: #fb923c;
+        --border: #44403c;
+        --card-bg: #292524;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 2rem 1rem 3rem;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      max-width: 680px;
+      width: 100%;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.25rem;
+    }
+    .subtitle {
+      color: var(--muted);
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.1rem 1.25rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+    }
+    dt {
+      font-weight: 600;
+      margin-top: 1rem;
+      margin-bottom: 0.25rem;
+    }
+    dd {
+      margin-left: 0;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Liquid Calendar</h1>
+    <p class="subtitle">Support</p>
+
+    <div class="card">
+      <strong>Email support</strong>
+      <p>If you found a bug, need help with a calendar issue, or have a billing question, email <a href="mailto:mrjoevu@hotmail.com">mrjoevu@hotmail.com</a>.</p>
+    </div>
+
+    <h2>Frequently asked questions</h2>
+    <dl>
+      <dt>Does Liquid Calendar have its own cloud sync?</dt>
+      <dd>No. Liquid Calendar reads and writes the calendar accounts already available on your iPhone. If your calendar provider syncs across devices, those changes will appear there.</dd>
+
+      <dt>Does the app require an account?</dt>
+      <dd>No. The shipped app does not have a Liquid Calendar account system.</dd>
+
+      <dt>How does Pro unlock work?</dt>
+      <dd>Liquid Calendar includes a free tier with core calendar features and month view. Pro is a one-time Apple in-app purchase that unlocks the additional views and input features. It does not auto-renew. If you already bought Pro, use Restore Purchases from the paywall while signed in with the same Apple ID.</dd>
+
+      <dt>How do I remove Google Calendar access?</dt>
+      <dd>Use the disconnect action inside the app to remove the local Google connection. You can also revoke access from your Google account security settings.</dd>
+
+      <dt>What if reminders are not showing?</dt>
+      <dd>Check that notifications are enabled in iOS Settings and that the event itself has an alert configured.</dd>
+
+      <dt>The app is not loading my events. What should I check?</dt>
+      <dd>Make sure Liquid Calendar still has calendar permission in iOS Settings and that the calendar you expect is selected inside the app.</dd>
+    </dl>
+  </div>
+</body>
+</html>
