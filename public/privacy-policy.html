@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liquid Calendar — Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #fafaf9;
+      --text: #1c1917;
+      --muted: #78716c;
+      --accent: #f97316;
+      --card-bg: #ffffff;
+      --border: #e7e5e4;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1c1917;
+        --text: #fafaf9;
+        --muted: #a8a29e;
+        --accent: #fb923c;
+        --card-bg: #292524;
+        --border: #44403c;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 2rem 1rem 3rem;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.25rem;
+    }
+    .subtitle {
+      color: var(--muted);
+      margin-top: 0;
+      margin-bottom: 2rem;
+      font-size: 0.95rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.3rem;
+    }
+    p, li {
+      margin-bottom: 0.75rem;
+    }
+    ul {
+      padding-left: 1.25rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.1rem 1.25rem;
+      margin: 1rem 0;
+    }
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+      font-size: 1rem;
+    }
+    a {
+      color: var(--accent);
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Liquid Calendar — Last updated: March 12, 2026</p>
+
+    <p>
+      Liquid Calendar is an iPhone calendar app. This policy explains what data the app can access, where that data is stored, and which third parties are involved.
+    </p>
+
+    <h2>1. What the app accesses</h2>
+
+    <div class="card">
+      <h3>Calendar data</h3>
+      <p>
+        If you grant calendar permission, Liquid Calendar reads and writes events in the calendars available on your device. That includes Apple calendars and any Google calendars you connect through Google OAuth.
+      </p>
+      <p>
+        Liquid Calendar does not operate its own cloud event database. Your events remain in the calendar accounts you already use.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Voice input</h3>
+      <p>
+        If you use voice entry, the app uses iOS speech-recognition APIs to convert your speech into text for event creation. The app does not run its own speech-processing backend.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Local reminders</h3>
+      <p>
+        If you enable notifications and create or edit an event with an alarm, the app may schedule a local reminder on your device. Reminder content can appear on the iPhone lock screen depending on your iOS notification settings.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Location search</h3>
+      <p>
+        If you type a location while creating an event, Liquid Calendar can query Apple Maps autocomplete services to suggest matching places. Those queries are handled by Apple, not a Liquid Calendar backend.
+      </p>
+    </div>
+
+    <h2>2. Data stored by Liquid Calendar</h2>
+    <ul>
+      <li>App preferences such as selected calendars, view preferences, and Pro access state are stored locally on your device.</li>
+      <li>Google Calendar OAuth tokens are stored in iOS secure storage.</li>
+      <li>The app does not provide an in-app account system and does not maintain a user profile database.</li>
+    </ul>
+
+    <h2>3. Third-party services</h2>
+    <p>Liquid Calendar may use the following third-party services:</p>
+    <ul>
+      <li><strong>Google Calendar</strong> for connected Google calendar access. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></li>
+      <li><strong>Apple Maps</strong> for optional place autocomplete when you search event locations. <a href="https://www.apple.com/legal/privacy/data/en/apple-maps/" target="_blank" rel="noopener">Privacy Policy</a></li>
+      <li><strong>RevenueCat</strong> for one-time Pro purchase entitlement and restore handling. <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></li>
+      <li><strong>PostHog</strong> for product analytics when configured. <a href="https://posthog.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></li>
+      <li><strong>Sentry</strong> for crash reporting and diagnostics when configured. <a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Privacy Policy</a></li>
+    </ul>
+
+    <h2>4. How Google user data is shared, transferred, or disclosed</h2>
+    <ul>
+      <li>Liquid Calendar does not sell Google user data.</li>
+      <li>Liquid Calendar does not transfer or disclose Google user data to data brokers, information resellers, ad networks, or other unrelated third parties.</li>
+      <li>Google Calendar data is shared with Google only as needed to provide the user-facing features you request, such as connecting your Google account, loading your calendars, and creating, updating, or deleting events on your behalf.</li>
+      <li>Liquid Calendar does not operate its own calendar backend and does not copy Google Calendar event data into a Liquid Calendar cloud database.</li>
+      <li>Google user data may be disclosed only if required to comply with applicable law, enforce the app's terms, or respond to security or abuse issues.</li>
+      <li>The use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements.</li>
+    </ul>
+
+    <h2>5. What the app does not currently do</h2>
+    <ul>
+      <li>No Liquid Calendar account signup or sign-in.</li>
+      <li>No Liquid Calendar-managed cloud sync.</li>
+      <li>No HealthKit integration in the shipped app.</li>
+      <li>No training or fine-tuning of AI models on your calendar data.</li>
+    </ul>
+
+    <h2>6. Security</h2>
+    <ul>
+      <li>The app relies on iOS secure storage for sensitive local tokens.</li>
+      <li>Network communication to third-party services uses HTTPS.</li>
+      <li>Calendar data is stored by the calendar providers you use, not by Liquid Calendar's own backend.</li>
+    </ul>
+
+    <h2>7. Retention and deletion</h2>
+    <ul>
+      <li>You can edit or delete events through the calendar account that owns them.</li>
+      <li>You can disconnect Google Calendar from inside the app, which clears the app's local Google tokens.</li>
+      <li>You can remove the app and its locally stored preferences from your device at any time.</li>
+    </ul>
+
+    <h2>8. Changes to this policy</h2>
+    <p>
+      This policy may change as the shipped product changes. The "Last updated" date above reflects the latest revision.
+    </p>
+
+    <h2>9. Contact</h2>
+    <p>
+      Questions about privacy or data handling can be sent to
+      <a href="mailto:mrjoevu@hotmail.com">mrjoevu@hotmail.com</a>.
+    </p>
+
+    <footer>
+      &copy; 2026 Liquid Calendar. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
