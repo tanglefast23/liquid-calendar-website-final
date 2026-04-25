@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Likewise — Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #faf9f7;
+      --text: #1c1917;
+      --muted: #78716c;
+      --accent: #ef6f5a;
+      --card-bg: #ffffff;
+      --border: #ece8e1;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 2rem 1rem 3rem;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    h1 { font-size: 2rem; margin-bottom: 0.25rem; }
+    .subtitle { color: var(--muted); margin-top: 0; margin-bottom: 2rem; font-size: 0.95rem; }
+    h2 { font-size: 1.2rem; margin-top: 2rem; margin-bottom: 0.75rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+    p, li { margin-bottom: 0.75rem; }
+    ul { padding-left: 1.25rem; }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.1rem 1.25rem;
+      margin: 1rem 0;
+    }
+    .card h3 { margin-top: 0; margin-bottom: 0.5rem; color: var(--accent); font-size: 1rem; }
+    a { color: var(--accent); }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Likewise — Last updated: April 25, 2026</p>
+
+    <p>
+      Likewise is a question game two people play together on their phones. This policy explains what the app collects, where it goes, and who else is involved.
+    </p>
+
+    <h2>1. What we collect</h2>
+
+    <div class="card">
+      <h3>The first name you type</h3>
+      <p>
+        When you start a session, the app asks for a first name to label your answers. This name is stored with the session so the other player can see who said what. Use any name you like. We do not verify it and do not link it to a real identity.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Your answers</h3>
+      <p>
+        As you answer questions, your choices are saved to the session record so both players can review them at the end. Answers are tied to the session, not to a personal account.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>A session and device identifier</h3>
+      <p>
+        The app generates a random session ID when you start a game and a random device ID stored on your phone. These let your two phones find each other in the same session and let you rejoin if you close the app. They are not tied to your name, email, or Apple ID.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Basic usage events</h3>
+      <p>
+        The app records simple events such as "session created," "question answered," and "session completed." These help us see whether the app is working and which features people use. The events do not include the text of your answers or any personal details.
+      </p>
+    </div>
+
+    <h2>2. Where the data is stored</h2>
+    <ul>
+      <li>Session data, answers, and events are stored on Supabase, our hosting provider for the database.</li>
+      <li>The device ID and any in-progress session info are stored locally on your phone.</li>
+      <li>The app does not have user accounts, passwords, or sign-in. There is no profile to delete because there is no profile.</li>
+    </ul>
+
+    <h2>3. Third-party services</h2>
+    <ul>
+      <li><strong>Supabase</strong> hosts the session database and real-time channel that lets two phones stay in sync. <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></li>
+      <li><strong>Apple App Store</strong> distributes the iOS app and handles install metrics that Apple controls. <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Privacy Policy</a></li>
+    </ul>
+    <p>
+      Likewise does not use ad networks, analytics SDKs, or tracking pixels. It does not share data with data brokers or marketing partners.
+    </p>
+
+    <h2>4. What the app does not do</h2>
+    <ul>
+      <li>No accounts, passwords, or sign-in.</li>
+      <li>No advertising and no third-party trackers.</li>
+      <li>No selling of data.</li>
+      <li>No use of your answers to train AI models.</li>
+      <li>No access to your contacts, photos, or location.</li>
+    </ul>
+
+    <h2>5. Saving results to your photos</h2>
+    <p>
+      If you tap "save to photos" on the results screen, iOS asks for permission and the app writes a single image to your camera roll. The image stays on your device. The app does not upload it.
+    </p>
+
+    <h2>6. Children</h2>
+    <p>
+      Likewise is rated 17+ on the App Store and is not intended for children. Do not use the app if you are under the age limit shown on the App Store listing.
+    </p>
+
+    <h2>7. Retention and deletion</h2>
+    <ul>
+      <li>Old sessions remain in the database so the people who played them can revisit results from the same device. Sessions older than 90 days may be removed during routine cleanup.</li>
+      <li>To delete a specific session and its answers, email us with the session code shown on your results screen.</li>
+      <li>Removing the app from your device clears the device ID and any local session info.</li>
+    </ul>
+
+    <h2>8. Security</h2>
+    <ul>
+      <li>All network traffic uses HTTPS.</li>
+      <li>Database access uses row-level security so a session's data is only readable with the right session ID.</li>
+      <li>Sensitive local values are kept in iOS secure storage.</li>
+    </ul>
+
+    <h2>9. Changes to this policy</h2>
+    <p>
+      We may update this policy when the app changes. The date above shows the latest revision.
+    </p>
+
+    <h2>10. Contact</h2>
+    <p>
+      Questions about privacy or a data request can be sent to
+      <a href="mailto:mrjoevu@gmail.com">mrjoevu@gmail.com</a>.
+    </p>
+
+    <footer>
+      &copy; 2026 Tanglefast. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
